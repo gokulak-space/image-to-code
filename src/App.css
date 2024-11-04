@@ -23,9 +23,122 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+.file-dropzone-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.file-dropzone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7.5px;
+  padding: 20px;
+  height: 250px;
+  width: 450px;
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 16px;
+  margin-top: 150px;
+}
+
+.files-uploaded {
+  width: auto;
+  text-align: center;
+}
+
+.generate-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.output-pane {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px;
+  margin-top: 16px;
+  width: 100%; /* Set width to 80% */
+  margin-top: 50px;
+  margin-left: auto; /* Center the pane */
+  margin-right: auto; /* Center the pane */
+ 
+}
+
+
+.input-content, .output-content {
+  width: 48%;
+  border: 2px solid #1f1d1d;
+  padding: 16px;
+
+}
+
+.vertical-separator {
+  width: 20px;
+  background-color: #ccc;
+  height: 100%;
+  align-self: stretch;
+}
+
+#output {
+  display: none;
+}
 
 .App-link {
   color: #61dafb;
+}
+.mainContainer {
+  margin-top: 75px;
+  margin-left: 37.5px;
+  margin-right: 37.5px;
+}
+
+.rootContainer {
+  position: relative;
+  height: 50vh;
+}
+
+.codeContainer {
+  padding: 20px;
+  height: inherit;
+}
+
+.codeContainerHeader {
+  height: 32px;
+  width: inherit;
+  background-color: #cbcdd6;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.codeContainerBodyRoot {
+  background-color: black;
+  height: inherit;
+  overflow: auto;
+  scrollbar-color: #cbcdd6;
+}
+
+.codeContainerBodyContent {
+  font-family: sans-serif;
+  color: white;
+  padding: 10px;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+}
+
+.outputRenderer {
+  border: 1px solid black;
+  height: inherit;
+  overflow: auto;
 }
 
 @keyframes App-logo-spin {
